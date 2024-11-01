@@ -334,7 +334,7 @@ void RadarScreen::DrawDot(
         graphics.DrawPolygon(&pen, points, 4);
     }
     else if (this->historyTrailType == this->trailTypeCircle) {
-        graphics.DrawEllipse(&pen, area);
+        graphics.FillEllipse(&pen, area);
     }
     else {
         graphics.DrawRectangle(&pen, area);
